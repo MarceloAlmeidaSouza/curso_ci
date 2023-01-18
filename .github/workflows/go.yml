@@ -7,6 +7,7 @@ on:
   push:
     branches: 
     - Aula_2
+    - main
   pull_request:
     branches: 
     - Aula_2
