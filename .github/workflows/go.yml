@@ -6,7 +6,7 @@ name: Go
 on:
   push:
     branches: 
-    - Aula_2
+    - "Aula_2"
     - main
   pull_request:
     branches: 
