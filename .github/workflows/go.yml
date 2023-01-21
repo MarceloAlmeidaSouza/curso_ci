@@ -5,12 +5,9 @@ name: Go
 
 on:
   push:
-    branches: 
-    - "Aula_2"
-    - main
+    branches: ['*']
   pull_request:
-    branches: 
-    - Aula_2
+    branches: ['*']
     
 jobs:
   test:
