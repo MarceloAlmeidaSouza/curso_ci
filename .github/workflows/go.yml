@@ -5,9 +5,9 @@ name: Go
 
 on:
   push:
-    branches: ['*']
+    branches: ['no*run']
   pull_request:
-    branches: ['*']
+    branches: ['no*run']
     
 jobs:
   test:
@@ -58,4 +58,9 @@ jobs:
   docker:
     needs: build
     uses: './.github/workflows/Docker.yml'
+    secrets: inherit
+    
+  deploy_ec2: # Continuous deploy
+    needs: build
+    uses: './.github/workflows/ec2.yml'
     secrets: inherit
